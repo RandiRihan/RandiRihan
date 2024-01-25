@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    background:url("hub.png") no-repeat;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+header {
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    user-select: none;
+    font-weight: bold;
+}
+
+.navigation a{
+    position:relative;
+    font-size: 1.1em;
+    color:white;
+    text-decoration:none;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+
+.navigation a::after{
+    content:"";
+    position: absolute;
+    height:3px;
+    width:100%;
+    background: white;
+    border-radius: 5px;
+    left:0;
+    bottom:-6px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 100px;
+    height:50px;
+    background:transparent;
+    cursor:pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+    color:white;
+    margin-left: 40px;
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background:transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    transition: transform .5s ease, height .2s ease;
+}
+
+.rihan4{
+position:absolute;
+top:620px;
+left:0;
+width:630px;
+}
+
+.rihan5{
+position:absolute;
+top:620px;
+right:0px;
+width:630px;
+}
+
+.rihan6{
+position:absolute;
+top:1270px;
+}
